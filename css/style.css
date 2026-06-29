@@ -1,0 +1,200 @@
+/* style.css - Simpan di dalam folder /css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+}
+
+/* Navigasi */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Kontainer Halaman */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Tabel Harga */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+/* Desain Halaman Login */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dfe6e9;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --- Tambahan untuk Layout Form Pesanan --- */
+
+.container-form {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+}
+
+.form-title {
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 10px;
+    border-bottom: none; /* Menghapus border bawah default h2 */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.laundry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    flex: 0 0 200px; /* Lebar kolom label di kiri */
+    font-weight: bold;
+    color: #333;
+}
+
+.input-col {
+    flex: 1;
+}
+
+.input-col input[type="text"],
+.input-col input[type="date"],
+.input-col select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.input-col input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.label-inline {
+    font-weight: normal !important;
+    flex: none !important;
+}
+
+/* Group Tombol */
+.button-group {
+    margin-left: 200px; /* Menyejajarkan tombol dengan kolom input */
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-simpan {
+    background-color: #008be1; /* Biru di gambar */
+    color: white;
+    border: 1px solid #0077c0;
+    padding: 12px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-batal {
+    background-color: #ff8800; /* Oranye di gambar */
+    color: white;
+    border: 1px solid #e67a00;
+    padding: 12px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-simpan:hover { background-color: #0077c0; }
+.btn-batal:hover { background-color: #e67a00; }

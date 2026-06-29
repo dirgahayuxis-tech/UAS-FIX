@@ -1,0 +1,143 @@
+/* style1.css */
+
+/* 1. Pengaturan Dasar & Font */
+:root {
+    --primary-blue: #2c3e50;    /* Biru Navy (Warna utama index) */
+    --accent-blue: #3498db;     /* Biru Langit (Aksen) */
+    --light-gray: #f8f9fa;      /* Latar belakang terang */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* 2. Header & Navigasi */
+.main-header {
+    background-color: var(--primary-blue);
+    padding: 30px 0;
+    border-bottom: 4px solid var(--accent-blue);
+}
+
+.main-header h1 {
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.main-header .nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+}
+
+.main-header .nav-link:hover {
+    color: var(--accent-blue) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* 3. Section Styling */
+section h2 {
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent-blue);
+    bottom: 0;
+    left: 25%;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 4. Card & Gambar (Paket Layanan) */
+.menu-img {
+    height: 220px;
+    object-fit: cover; /* Menjaga gambar tetap proporsional (tidak gepeng) */
+    border-bottom: 1px solid #ddd;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: default;
+    text-align: center; 
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+    cursor: pointer;
+    font-weight: bold;
+                   
+}
+
+.card-title {
+    color: var(--primary-blue);
+}
+
+/* 5. Jam Operasional & Lokasi */
+#hours, #location {
+    background-color: var(--white);
+}
+
+#hours p, #location p {
+    font-size: 1.1rem;
+}
+
+strong {
+    color: var(--accent-blue);
+}
+
+/* 6. Footer */
+footer {
+    background-color: var(--primary-blue) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* 7. Responsif (Mobile Friendly) */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .nav-item {
+        margin-bottom: 5px;
+    }
+}
+
+.btn-login {
+    background-color: #3498db; /* Warna biru */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
