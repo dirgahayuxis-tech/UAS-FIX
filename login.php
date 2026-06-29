@@ -23,7 +23,7 @@ if (isset($_POST['submit_login'])) {
         $_SESSION['status_login'] = true;
         
         // Setelah Login Berhasil, arahkan ke data_pesanan.php
-        echo "<script>alert('Login Berhasil!'); window.location='data_pesanan.php';</script>";
+        echo "<script>alert('Login Berhasil!'); window.location='index.php';</script>";
     } else {
         echo "<script>alert('Username atau Password salah!'); window.location='login.php';</script>";
     }
