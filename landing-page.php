@@ -25,7 +25,7 @@
                     </ul>
 
                     <div style="width: 100px; text-align: right;">
-                        <a href="login.php" class="btn btn-outline-light btn-sm">Login Admin</a>
+                        <a href="login.php" class="btn btn-outline-light btn-sm">Masuk</a>
                     </div>
                 </div>
             </nav>
